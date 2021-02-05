@@ -22,7 +22,7 @@ class Trie:
         self.curr = TrieNode()
         
     
-    def insert(self,word): #TC : O(26 * N * M) , where N is the no of words to be inseted and M is the approx lenght of each word
+    def insert(self,word): #TC : O(N * M) , SC = O(26 * M * N) ,where N is the no of words to be inseted and M is the approx lenght of each word
         parent_node = self.curr
         
         for c in word:

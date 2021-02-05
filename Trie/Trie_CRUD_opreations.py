@@ -18,7 +18,7 @@ class Trie:
         parent_node = self.root
 
         for ch in word:
-            print(parent_node.children)
+            
             current_node = parent_node.children.get(ch)
 
             if not current_node:
